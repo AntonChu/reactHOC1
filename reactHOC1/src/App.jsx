@@ -5,7 +5,7 @@ function DateTime(props) {
 }
 
 const DateTimePretty = (Component) => {
-  return function container() {
+  return (props) => {
     const finalDate = '';
     const date = new Date().getTime() - Date.parse(props.date);
     const days = Math.floor(date / (1000 * 60 * 60 * 24));
